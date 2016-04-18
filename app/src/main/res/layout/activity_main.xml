@@ -4,6 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:paddingLeft="8sp"
+    android:paddingTop="8sp"
     tools:context="com.example.android.justjava.MainActivity">
 
     <TextView
@@ -12,17 +14,32 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:text="Quantity"
-        android:textSize="25sp"
-        android:textAllCaps="true"/>
+        android:textAllCaps="true"
+        android:textSize="25sp" />
 
-    <TextView
-        android:textSize="16sp"
-        android:id="@+id/tvQuantity"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8sp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"/>
+        <TextView
 
-        android:textColor="@android:color/black"
-        android:text="0" />
+            android:layout_marginLeft="8sp"
+            android:layout_marginRight="8sp"
+            android:id="@+id/tvQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+        <Button
+            android:text="+"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/tv2"
@@ -30,23 +47,23 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:text="Price"
-        android:textSize="25sp"
-        android:textAllCaps="true"/>
+        android:textAllCaps="true"
+        android:textSize="25sp" />
 
     <TextView
-        android:textSize="16sp"
         android:id="@+id/tvPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="$ 10"
 
         android:textColor="@android:color/black"
-        android:text="$" />
+        android:textSize="16sp" />
 
     <Button
         android:id="@+id/btOrder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Order"
-        android:onClick="submitOrder"/>
+        android:onClick="submitOrder"
+        android:text="order" />
 </LinearLayout>
