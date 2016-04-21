@@ -26,7 +26,7 @@ public class MainActivity extends Activity {
 
     /*  this method displays the given quantity value on the screen.
     * */
-    private void display(int number) {
+    private void  display(int number) {
         TextView quantityTextView = (TextView) findViewById(R.id.tvQuantity);
         quantityTextView.setText("" + number);
     }
